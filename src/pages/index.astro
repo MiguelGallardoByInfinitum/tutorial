@@ -1,23 +1,7 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro'
 const pageTitle = 'Home Page'
-
 ---
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<nav>
-            <a href="/">Home</a>
-            <a href="/about/">About</a>
-            <a href="/blog/">Blog</a>
-        </nav>
-		<h1>{pageTitle}</h1>
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+	<h2>My awesome blog subtitle</h2>
+</BaseLayout>
