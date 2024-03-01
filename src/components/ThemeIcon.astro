@@ -11,6 +11,7 @@
   #themeToggle {
     border: 0;
     background: none;
+    cursor:pointer;
   }
   .sun { fill: black; }
   .moon { fill: transparent; }
@@ -43,6 +44,11 @@
     element.classList.toggle("dark");
 
     const isDark = element.classList.contains("dark");
+    let themeToggle = document.getElementById('themeToggle')
+    isDark
+    ?  themeToggle.style.animation = 'themeToggle 0.5s forwards'
+    :  themeToggle.style.animation = 'themeToggleBackwards 0.5s forwards'
+  
     localStorage.setItem("theme", isDark ? "dark" : "light");
   }
 

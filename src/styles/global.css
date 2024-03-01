@@ -8,7 +8,7 @@ html {
     color: #fff;
   }
   
-  .dark .nav-links a {
+  .dark a {
     color: #fff;
   }
   
@@ -69,6 +69,24 @@ html {
   
   .expanded {
     display: unset;
+  }
+
+  @keyframes themeToggle {
+    from {
+      transform: scale(0) rotate(0deg);
+    } 
+    to {
+      transform: scale(1) rotate(360deg);
+    }
+  }
+
+  @keyframes themeToggleBackwards {
+    from {
+      transform: scale(0) rotate(0deg);
+    } 
+    to {
+      transform: scale(1) rotate(360deg);
+    }
   }
   
   @media screen and (min-width: 636px) {
