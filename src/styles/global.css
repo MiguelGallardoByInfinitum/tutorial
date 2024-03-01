@@ -1,15 +1,36 @@
 html {
     background-color: #f1f5f9;
     font-family: sans-serif;
+    transition: background 0.5s ease;
+  }
+
+  button {
+    cursor: pointer;
+    padding: 5px;
   }
 
   html.dark {
     background-color: #0d0950;
     color: #fff;
+    transition: background 0.5s ease;
   }
   
+  .dark .nav-links a:hover {
+    background-color: #4c1d95;
+  }
+
   .dark a {
     color: #fff;
+  }
+
+  .dark button {
+    background-color: #0a0570;
+    color: white;
+    border: 1px solid white;
+  }
+
+  .dark footer a {
+    background-color: #ff9776;
   }
   
   body {
