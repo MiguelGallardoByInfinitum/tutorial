@@ -1,7 +1,7 @@
 html {
     background-color: #f1f5f9;
     font-family: sans-serif;
-    transition: background 0.5s ease;
+    transition: all 0.5s ease;
   }
 
   button {
@@ -10,9 +10,10 @@ html {
   }
 
   html.dark {
-    background-color: #0d0950;
+    background: #0e0a4f;
+    background: linear-gradient(90deg, #0d0950 0%, #090979 35%, #08007e 100%);
     color: #fff;
-    transition: background 0.5s ease;
+    transition: all 0.5s ease;
   }
   
   .dark .nav-links a:hover {
@@ -26,7 +27,7 @@ html {
   .dark button {
     background-color: #0a0570;
     color: white;
-    border: 1px solid white;
+    border: 2px solid white;
   }
 
   .dark footer a {
@@ -81,6 +82,11 @@ html {
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
+    color:#4c1d95;
+  }
+
+  .dark .nav-links a {
+    color: white;
   }
   
   .nav-links a:hover,
